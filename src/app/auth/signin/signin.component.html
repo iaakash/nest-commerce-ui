@@ -1,0 +1,6 @@
+<form [formGroup]="signinform" (submit)="onSubmit()">
+  <input type="text" formControlName="username" placeholder="Username">
+  <input type="text" formControlName="password" placeholder="Password">
+  <input type="submit">
+</form>
+<a [routerLink]="['/auth/signup']">Signup</a>

@@ -1,0 +1,13 @@
+<form [formGroup]="signupform" (submit)="onSubmit()">
+  <input type="text" formControlName="username" placeholder="username">
+  <input type="text" formControlName="password" placeholder="password">
+  <div class="radio">
+    Is Seller
+    <input type="radio" value="true" formControlName="seller"> True
+    <input type="radio" value="false" formControlName="seller"> False
+
+  </div>
+  <input type="submit">
+</form>
+
+<pre>{{ signupform.value | json }}</pre>

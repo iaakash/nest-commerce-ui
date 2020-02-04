@@ -1,0 +1,12 @@
+<form [formGroup]="editUserForm" (submit)="onUpdate()">
+    <input type="text" formControlName="username" placeholder="Username">
+    <div formGroupName="address">
+    <input type="text" formControlName="addr1" placeholder="Address 1">
+    <input type="text" formControlName="addr2"  placeholder="Address 2">
+    <input type="text" formControlName="city"  placeholder="City">
+    <input type="text" formControlName="state"  placeholder="State">
+    <input type="text" formControlName="country"  placeholder="Country">
+    <input type="text" formControlName="zip"  placeholder="Zip">
+    </div>
+    <input type="submit" value="Submit">
+</form>

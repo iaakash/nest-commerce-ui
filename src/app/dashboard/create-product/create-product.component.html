@@ -1,0 +1,8 @@
+<form [formGroup]="createProductForm" (submit)="onSubmit()">
+  <input type="text" formControlName="title" placeholder="Title">
+  <input type="text" formControlName="description" placeholder="Description">
+  <input type="file" placeholder="Image" (change)="onFileUpload($event)">
+  <input type="number" formControlName="price" placeholder="Price">
+  <input type="submit">
+</form>
+<pre> {{ createProductForm.value | json }} </pre>

@@ -1,0 +1,7 @@
+<div class="productBlock">
+  <span class="title">{{ product.title }}</span>
+  <span class="image">
+    <img [attr.src]="getImgContent(product.image)" alt="">
+    <div innerHTML="product.image | safeHtml"></div>
+  </span>
+</div>
