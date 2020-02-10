@@ -55,7 +55,6 @@ export class EditUserComponent implements OnInit {
   getUserDetailsAndPatch() {
     this.dashboardService.fetchUser().subscribe(res => {
       this.userDetails = res;
-      debugger;
       this.patchForm();
     });
   }

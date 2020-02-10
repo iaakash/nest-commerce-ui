@@ -10,8 +10,7 @@ export class SafeHtmlPipe implements PipeTransform {
   }
 
   transform(value: any, args?: any): any {
-    console.log('imageaval::', value);
-    // return this.sanitizer.bypassSecurityTrustHtml(value);
+
     return this.sanitizer.bypassSecurityTrustResourceUrl(
       'data:image/jpeg;base64,' + value);
   }

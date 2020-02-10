@@ -1,6 +1,8 @@
 <form [formGroup]="signupform" (submit)="onSubmit()">
-  <input type="text" formControlName="username" placeholder="username">
-  <input type="text" formControlName="password" placeholder="password">
+  <input type="text" formControlName="email" placeholder="Email">
+  <input type="file" (change)="onAvatarUpload($event)" value="Avatar">
+  <input type="text" formControlName="username" placeholder="Username">
+  <input type="text" formControlName="password" placeholder="Password">
   <div class="radio">
     Is Seller
     <input type="radio" value="true" formControlName="seller"> True

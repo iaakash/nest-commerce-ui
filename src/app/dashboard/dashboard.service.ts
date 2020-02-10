@@ -20,11 +20,6 @@ export class DashboardService {
   }
 
   createProduct(product) {
-    // title: [],
-    //   description: [],
-    //   image: [],
-    //   price: [],
-
     const formData = new FormData();
     formData.append('title', product.title);
     formData.append('description', product.description);
@@ -32,7 +27,6 @@ export class DashboardService {
     formData.append('price', product.price);
 
 
-    debugger;
 
     return this.http.post(`${this.BASE_URL}products`, formData);
   }

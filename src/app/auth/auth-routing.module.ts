@@ -1,3 +1,5 @@
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { ForgetPasswordComponent } from './forget-password/forget-password.component';
 import { SignupComponent } from './signup/signup.component';
 import { SigninComponent } from './signin/signin.component';
 import { NgModule } from '@angular/core';
@@ -19,6 +21,14 @@ const routes: Routes = [
       {
         path: 'signup',
         component: SignupComponent
+      },
+      {
+        path: 'forget-password',
+        component: ForgetPasswordComponent,
+      },
+      {
+        path: 'reset-password/:token',
+        component: ResetPasswordComponent,
       }
     ]
   }
